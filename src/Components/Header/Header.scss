@@ -1,0 +1,32 @@
+@import '../../Styles/Main.scss';
+
+.header{
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    .name-span{
+        font-weight: bold;
+        .orange-span{
+            color: $orange-primary;
+        }
+    }
+    .header-nav{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 2;
+            gap: 2rem;
+            li{
+                a{
+                    transition: all .3s;
+                    &:hover{
+                        color: $orange-primary;
+                    }
+                }
+            }
+        }
+    }
+}
