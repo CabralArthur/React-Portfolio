@@ -36,3 +36,19 @@ body{
     margin: 0 auto;
 }
 
+.primaryButton{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    background-color: $orange-primary;
+    color: $main-black;
+    border-radius: 3px;
+    transition: all .3s;
+    text-align: center;
+    &:hover{
+        background-color: $main-black;
+        color: $orange-primary;
+        cursor: pointer;
+    }
+}
+
