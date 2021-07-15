@@ -33,6 +33,23 @@ body {
   margin: 0 auto;
 }
 
+.primaryButton {
+  width: 10rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #FFA363;
+  color: #0B132A;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+.primaryButton:hover {
+  background-color: #0B132A;
+  color: #FFA363;
+  cursor: pointer;
+}
+
 .header {
   padding: 1.5rem;
   width: 100%;
