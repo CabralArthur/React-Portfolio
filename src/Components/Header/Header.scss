@@ -7,11 +7,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1;
+    animation: pulseLoad .6s;
     .name-span{
         font-weight: bold;
-        .orange-span{
-            color: $orange-primary;
-        }
     }
     .header-nav{
         ul{
@@ -30,3 +28,4 @@
         }
     }
 }
+
