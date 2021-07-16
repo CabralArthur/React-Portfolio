@@ -1,0 +1,29 @@
+.aboutSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    h2{
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+    .aboutSectionContent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        img{
+            max-width: 550px;
+            margin-bottom: 6rem;
+        }
+        .aboutSectionText{
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: left;
+            gap: 3rem;
+        }
+    }
+}

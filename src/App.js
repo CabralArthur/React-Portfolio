@@ -1,3 +1,4 @@
+import AboutSection from "./Components/AboutSection/AboutSection";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import HomeSection from "./Components/HomeSection/HomeSection";
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <HomeSection/>
+      <AboutSection/>
       <Footer/>
     </div>
   );
