@@ -5,16 +5,14 @@
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
-    h2{
-        font-size: 3.5rem;
-        font-weight: 500;
-    }
     .aboutSectionContent{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 5rem;
         img{
-            max-width: 550px;
+            max-width: 34.5rem;
             margin-bottom: 6rem;
         }
         .aboutSectionText{
@@ -23,7 +21,10 @@
             flex-wrap: wrap;
             flex-direction: column;
             text-align: left;
-            gap: 3rem;
+            gap: 2rem;
+            button{
+                margin-bottom: 15rem;
+            }
         }
     }
 }
