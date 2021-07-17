@@ -1,0 +1,43 @@
+.skillsSection {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.skillsSection .Grid-Dropdowns {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 2rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.skillsSection .Grid-Dropdowns > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.skillsSection .Grid-Dropdowns > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.skillsSection .Grid-Dropdowns > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.skillsSection .Grid-Dropdowns > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.skillsSection .Grid-Dropdowns .AccordionTitle {
+  color: #f8f7f7;
+}
