@@ -8,7 +8,7 @@ const HomeSection = () => {
     return (
         <section className='container homeSection'>
             <div className='homeText'>
-                <Title texto='Beginner / FullStack Developer'/>
+                <Title titulo='Beginner / FullStack Developer'/>
                 <span>
                     Student of Information Systems, immersed in the world of technology since 2020..
                 </span>

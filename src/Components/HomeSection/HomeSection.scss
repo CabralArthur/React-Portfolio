@@ -7,7 +7,7 @@
     margin-top: 10rem;
     .homeText{
         max-width: 460px;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -18,7 +18,7 @@
     .homeImage{
         animation: pulseLoad 1s;
         .devImage{
-            max-width: 400px;
+            max-width: 25rem;
         }
     }
 }

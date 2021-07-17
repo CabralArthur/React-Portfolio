@@ -11,7 +11,7 @@
 }
 .homeSection .homeText {
   max-width: 460px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,5 +31,5 @@
           animation: pulseLoad 1s;
 }
 .homeSection .homeImage .devImage {
-  max-width: 400px;
+  max-width: 25rem;
 }
