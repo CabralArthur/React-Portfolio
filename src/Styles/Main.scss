@@ -7,6 +7,14 @@ $main-gray: #232743;
 $light-gray: #8c90aac1;
 $orange-primary: #FFA363;
 
+html {
+    scroll-behavior: smooth;
+}
+   
+:target {
+    scroll-margin-top: 1px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

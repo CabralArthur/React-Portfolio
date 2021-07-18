@@ -5,7 +5,7 @@ import DevImage from '../../assets/img/vector/dev-vector.svg'
 
 const HomeSection = () => {
     return (
-        <section className='homeSection'>
+        <section className='homeSection' id='homeSection'>
             <div className='homeText'>
                 <h1 className='homeTitle'>
                     Beginner / FullStack Developer

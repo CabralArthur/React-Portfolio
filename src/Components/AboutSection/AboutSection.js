@@ -5,7 +5,7 @@ import AboutDevImage from '../../assets/img/vector/about-dev-vector.svg'
 
 const AboutSection = () => {
     return (
-        <section className='aboutSection'>
+        <section className='aboutSection' id='aboutSection'>
             <div className='sectionTitle'>
                 <h1 className='aboutTitle'>
                     About Me
