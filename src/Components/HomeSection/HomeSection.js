@@ -2,13 +2,14 @@ import React from 'react'
 import "../../Styles/Main.css"
 import "./HomeSection.css"
 import DevImage from '../../assets/img/vector/dev-vector.svg'
-import Title from '../Title/Title'
 
 const HomeSection = () => {
     return (
-        <section className='container homeSection'>
+        <section className='homeSection'>
             <div className='homeText'>
-                <Title titulo='Beginner / FullStack Developer'/>
+                <h1 className='homeTitle'>
+                    Beginner / FullStack Developer
+                </h1>
                 <span>
                     Student of Information Systems, immersed in the world of technology since 2020..
                 </span>
@@ -17,8 +18,9 @@ const HomeSection = () => {
                 </a>
             </div>
             <div className='homeImage'>
-                <img src={DevImage} className='devImage' alt='Imagem Developer'>
-                </img>
+                <div className='imageWrapper'>
+                    <img src={DevImage} className='devImage' alt='Imagem Developer'></img>
+                </div>
             </div>
       </section>
     )
