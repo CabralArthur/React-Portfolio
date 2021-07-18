@@ -22,7 +22,7 @@ const AboutSection = () => {
 
                 <div className='aboutSectionText'>
                     <span>Graduating in Information Systems at UFRPE, student passionate about technology.</span> 
-                    <a className='primaryButton' href='/'>
+                    <a className='primaryButton' href='https://drive.google.com/file/d/1IB9-osaswGH0qmlpkRI6uwPWQFigmLFu/view?usp=sharing' arget='_blank' rel='noopener noreferrer'>
                         Download My CV <i className="fas fa-download"></i>
                     </a>
                 </div>
