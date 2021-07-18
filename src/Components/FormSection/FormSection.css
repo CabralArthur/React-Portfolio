@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 1px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  color: #232743;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #f8f7f7;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.orange-span {
+  color: #FFA363;
+}
+
+.primaryButton {
+  width: 11rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #FFA363;
+  color: #232743;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+.primaryButton:hover {
+  background-color: #232743;
+  color: #FFA363;
+  cursor: pointer;
+}
+.primaryButton:hover i {
+  color: #FFA363;
+}
+
+@-webkit-keyframes pulseLoad {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulseLoad {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.formSection {
+  width: 100%;
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+.formSection .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.formSection .sectionTitle .formTitle {
+  font-size: 2rem;
+}
+.formSection .sectionTitle .formSubtitle {
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+.formSection form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 5px;
+}
+.formSection form textarea {
+  height: 150px;
+  resize: vertical;
+}
+.formSection form textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form textarea::-moz-placeholder {
+  font-size: 1rem;
+}
+.formSection form textarea:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form textarea::-ms-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form textarea::placeholder {
+  font-size: 1rem;
+}
+.formSection form input, .formSection form textarea {
+  font-size: 1rem;
+  background: transparent;
+  border-bottom: 1px solid #8c90aac1;
+  padding: 5px;
+}
+.formSection form input::-webkit-input-placeholder, .formSection form textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form input::-moz-placeholder, .formSection form textarea::-moz-placeholder {
+  font-size: 1rem;
+}
+.formSection form input:-ms-input-placeholder, .formSection form textarea:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form input::-ms-input-placeholder, .formSection form textarea::-ms-input-placeholder {
+  font-size: 1rem;
+}
+.formSection form input::placeholder, .formSection form textarea::placeholder {
+  font-size: 1rem;
+}
+.formSection form input[type=submit] {
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #FFA363;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.formSection form input[type=submit]:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.formSection form input[type=submit]:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
