@@ -54,7 +54,7 @@ content: {
 const SkillsSection = () => {
     const classes = useStyles();
     return (
-        <section className='skillsSection'>
+        <section className='skillsSection' id='skillsSection'>
             <div className='sectionTitle'>
                 <h1 className='skillsTitle'>
                     My Skills
