@@ -1,9 +1,103 @@
-.skillsSection {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  color: #232743;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #f8f7f7;
+}
+
+.App {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.orange-span {
+  color: #FFA363;
+}
+
+.primaryButton {
+  width: 11rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #FFA363;
+  color: #232743;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+.primaryButton:hover {
+  background-color: #232743;
+  color: #FFA363;
+  cursor: pointer;
+}
+.primaryButton:hover i {
+  color: #FFA363;
+}
+
+@-webkit-keyframes pulseLoad {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulseLoad {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.skillsSection {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -11,33 +105,103 @@
           justify-content: center;
   text-align: center;
 }
-.skillsSection .Grid-Dropdowns {
+.skillsSection .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.skillsSection .sectionTitle .skillsTitle {
+  font-size: 2rem;
+  max-width: 350px;
+}
+.skillsSection .sectionTitle .skillsSubtitle {
+  font-weight: 300;
+  max-width: 350px;
+  letter-spacing: 0.5rem;
+}
+.skillsSection .Dropdowns {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2rem 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 2rem 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 10rem;
 }
-.skillsSection .Grid-Dropdowns > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .skillsSection .Dropdowns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
 }
-.skillsSection .Grid-Dropdowns > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+.skillsSection .Dropdowns .dropdown {
+  margin: 0 auto;
+  max-width: 450px;
 }
-.skillsSection .Grid-Dropdowns > *:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+.skillsSection .Dropdowns .dropdown .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin: 1rem;
 }
-.skillsSection .Grid-Dropdowns > *:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+.skillsSection .Dropdowns .dropdown .sectionTitle .skillTitle {
+  font-size: 1.5rem;
+  max-width: 350px;
 }
-.skillsSection .Grid-Dropdowns .AccordionTitle {
-  color: #f8f7f7;
+.skillsSection .Dropdowns .dropdown .sectionTitle .skillSubtitle {
+  font-weight: 500;
+  font-size: 0.8rem;
+  max-width: 350px;
+  letter-spacing: 0.5rem;
+  color: #8c90aac1;
+}
+.skillsSection .Dropdowns .dropdown i {
+  font-size: 2rem;
+  color: #FFA363;
+}
+.skillsSection .Dropdowns .dropdown ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.skillsSection .Dropdowns .dropdown ul li span {
+  color: #8c90aac1;
+  letter-spacing: 0.2rem;
+}
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .skillsSection .Dropdowns .dropdown ul li span {
+    font-size: 0.75rem;
+  }
+}
+.skillsSection .Dropdowns .dropdown progress[value] {
+  width: 22rem;
+  height: 0.5rem;
+}
+.skillsSection .Dropdowns .dropdown progress[value]::-webkit-progress-bar {
+  background-color: #f8f7f7;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.skillsSection .Dropdowns .dropdown progress[value]::-webkit-progress-value {
+  background-color: #FFA363;
+  border-radius: 10px;
+}
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .skillsSection .Dropdowns .dropdown progress[value] {
+    width: 19rem;
+  }
 }
