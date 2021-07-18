@@ -12,7 +12,7 @@ import sixthCardSource from '../../assets/gif/card-6.gif'
 
 const Portfolio = () => {
     return (
-        <section className='portfolioSection'>
+        <section className='portfolioSection' id='portfolioSection'>
             
             <div className='sectionTitle'>
                 <h1 className='portfolioTitle'>
@@ -31,7 +31,7 @@ const Portfolio = () => {
                                 <p>Financiamente</p>
                                 <span>Financial maths matter.</span>
                             </div>
-                            <a href='https://financiamente.vercel.app/' target='_blank'>
+                            <a href='https://financiamente.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={fisrtCardSource} alt='Project Gif Card'/> 
                             </a>
                         </div>
@@ -44,7 +44,7 @@ const Portfolio = () => {
                                 <p>GlassCalc</p>
                                 <span>Calc done with glassmorphism style.</span>
                             </div>
-                            <a href='https://glass-calc.vercel.app/' target='_blank'>
+                            <a href='https://glass-calc.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={secondCardSource} alt='Project Gif Card'/>
                             </a>
                         </div>
@@ -56,7 +56,7 @@ const Portfolio = () => {
                                 <p>Move it</p>
                                 <span>Project Done In NLW#4.</span>
                             </div>
-                            <a href='https://cabralnlw.vercel.app/' target='_blank'>
+                            <a href='https://cabralnlw.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={thirdCardSource} alt='Project Gif Card'/>
                             </a>
                         </div>
@@ -68,7 +68,7 @@ const Portfolio = () => {
                                 <p>FlexBlog</p>
                                 <span>Website done using flex-box attributes.</span>
                             </div>
-                            <a href='https://origamid-flex.vercel.app/' target='_blank'>
+                            <a href='https://origamid-flex.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={fourthCardSource} alt='Project Gif Card'/>
                             </a>
                         </div>
@@ -81,7 +81,7 @@ const Portfolio = () => {
                                 <p>WildBeast</p>
                                 <span>Website done using grid layout attributes.</span>
                             </div>
-                            <a href='https://origamid-grid.vercel.app/' target='_blank'>
+                            <a href='https://origamid-grid.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={fifthCardSource} alt='Project Gif Card'/>
                             </a>
                         </div>
@@ -94,7 +94,7 @@ const Portfolio = () => {
                                 <p>InstaLink</p>
                                 <span>Page done to use in my instagram bio.</span>
                             </div>
-                            <a href='https://arthurcabral.vercel.app/' target='_blank'>
+                            <a href='https://arthurcabral.vercel.app/' target='_blank' rel="noopener noreferrer">
                                 <img src={sixthCardSource} alt='Project Gif Card'/>
                             </a>
                         </div>
