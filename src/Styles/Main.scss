@@ -4,6 +4,7 @@
 $primary-font: 'Rubik', sans-serif;
 $main-white: #f8f7f7;
 $main-gray: #232743;
+$light-gray: #8c90aac1;
 $orange-primary: #FFA363;
 
 * {
@@ -46,7 +47,7 @@ body{
 }
 
 .primaryButton{
-    width: 10rem;
+    width: 11rem;
     height: 3rem;
     padding: 1rem;
     background-color: $orange-primary;
@@ -74,4 +75,4 @@ body{
       opacity: 1;
       transform: scale(1);
     }
-  }
+}
