@@ -9,19 +9,19 @@ const Header = () => {
             <nav className='header-nav'>
                 <ul>
                     <li>
-                        <a href='/'>Home</a>
+                        <a href='#homeSection'>Home</a>
                     </li>
                     <li>
-                        <a href='/'>About</a>
+                        <a href='#aboutSection'>About</a>
                     </li>
                     <li>
-                        <a href='/'>Skills</a>
+                        <a href='#skillsSection'>Skills</a>
                     </li>
                     <li>
-                        <a href='/'>Projects</a>
+                        <a href='#portfolioSection'>Portfolio</a>
                     </li>
                     <li>
-                        <a href='/'>Contact</a>
+                        <a href='#formSection'>Contact</a>
                     </li>
                 </ul>
             </nav>

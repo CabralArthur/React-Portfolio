@@ -1,19 +1,25 @@
+@import '../../Styles/Main.scss';
 .header{
-    padding: 1.5rem;
     width: 100%;
+    padding: 1.5rem;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     justify-content: space-between;
     flex: 1;
     animation: pulseLoad .6s;
     .name-span{
         font-weight: bold;
+        @media (max-width: 560px) and (-webkit-min-device-pixel-ratio: 2) {
+            font-size: 2rem;
+            margin: 0 auto;
+        }
     }
     .header-nav{
         ul{
             display: flex;
             flex-wrap: wrap;
-            flex: 2;
+            margin: 0 auto;
             gap: 2rem;
             li{
                 a{
@@ -24,6 +30,23 @@
                 }
             }
         }
+        @media (max-width: 560px) and (-webkit-min-device-pixel-ratio: 2) {
+            width: 100%;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: .6rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    @media (max-width: 560px) and (-webkit-min-device-pixel-ratio: 2) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-top: 1rem;
     }
 }
 
